@@ -73,3 +73,13 @@ Look at the [TODO](TODO) file.
 
 ## Notes
 This is where I will add notes of things I learn while implementing this project
+
+* Rails Engines
+** Generate with ```rails plugin new foo --dummy-app=spec/dummy -T```
+
+## Questions
+These are questions I want to answer
+
+** How can I declare gems to be available for different groups (say pry for dev)
+that cascade across projects?
+
