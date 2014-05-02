@@ -76,6 +76,10 @@ This is where I will add notes of things I learn while implementing this project
 
 * Rails Engines
 ** Generate with ```rails plugin new foo --dummy-app=spec/dummy -T```
+** Wasted some time trying to get haml layouts to work.  I needed to include
+the haml gem in the embedding rails app and things worked like you would
+expect.  It does *not* matter if the haml gem is declared as a runtime
+dependency of the engine, application.haml will not be picked up by default.
 
 ## Questions
 These are questions I want to answer
