@@ -1,0 +1,46 @@
+[] Component Based Rails App
+   [] Create core engine w/dummy app and testing support (spec)
+      [] Create movie model
+      [] Create actor model
+      [] Create casting model
+   [] Create web application - no app directory, just routes
+      [] Create admin engine w/dummy app and testing support (spec)
+         [] CRUD operations for movies
+         [] CRUD operations for actors
+         [] CRUD operations for castings
+         [] Mount in web application at /admin
+         [] Deploy to digital ocean
+  [] Create public engine w/dummy app and testing support (spec)
+     [] Movie list page
+     [] Movie details page
+     [] Mount in web application at /
+     [] Deploy to digital ocean
+[] Import SOA
+   [] Create import service
+      [] Tool to randomly generate movies, actors and castings JSON data
+      [] Create java project that takes a JSON file from S3 and puts the
+         data into the database.
+      [] Expose above java operation via a REST api
+      [] Deploy to digital ocean
+   [] Add import functionality to admin site
+      [] Page to import data
+      [] Specify file and notification email address
+      [] File should be pushed to S3
+      [] Invoke REST api to begin import
+   [] Production SOA visibility
+      [] Instrument service requests
+      [] Provide visualization/searching of service requests
+[] API
+   [] Create API application
+   [] Fetching of movies
+   [] Fetching of movie details
+   [] Fetching of actors
+   [] Fetching of actor details
+   [] Deploy to digital ocean
+[] Actor Career Planner
+   [] Create engine for career planner feature
+   [] SPA using some front end framework
+   [] Search for actor by name
+   [] Add movie project data - name, start & end date, compensation
+   [] Execute logic to give most monetarily efficient plan of project
+      choices.
