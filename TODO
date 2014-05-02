@@ -2,7 +2,7 @@
    [X] Create core engine w/dummy app and testing support (spec)
       [X] Create movie model
       [X] Create actor model
-      [] Create casting model
+      [X] Create casting model
    [] Create web application - no app directory, just routes
       [] Create admin engine w/dummy app and testing support (spec)
          [] CRUD operations for movies

@@ -3,6 +3,7 @@ PATH
   specs:
     core (0.0.1)
       rails (~> 4.1.0)
+      schema_plus
 
 GEM
   remote: https://rubygems.org/
@@ -80,6 +81,9 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.3.1)
+    schema_plus (1.5.1)
+      activerecord (>= 3.2)
+      valuable
     slop (3.5.0)
     sprockets (2.12.1)
       hike (~> 1.2)
@@ -98,6 +102,7 @@ GEM
       polyglot (>= 0.3.1)
     tzinfo (1.1.0)
       thread_safe (~> 0.1)
+    valuable (0.9.8)
 
 PLATFORMS
   ruby
