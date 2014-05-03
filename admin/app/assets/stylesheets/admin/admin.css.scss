@@ -31,6 +31,23 @@ div.banner {
   padding-left: 1em;
 }
 
+div.metric {
+  text-align: center;
+  border: 1px solid darken($blue, 10%);
+  margin: 20px;
+
+  div.header {
+    background-color: $blue;
+    font-size: 125%;
+    color: $white;
+  }
+
+  div.value {
+    font-size: 300%;
+    font-weight: bold;
+  }
+}
+
 @import 'bootstrap';
 
 @import '../tail';

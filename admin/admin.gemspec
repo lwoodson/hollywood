@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 4.1.0"
   s.add_dependency "haml"
+  s.add_dependency "haml-rails"
   s.add_dependency "bootstrap-sass"
 
   s.add_development_dependency "pg"
