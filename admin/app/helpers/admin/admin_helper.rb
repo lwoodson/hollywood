@@ -19,5 +19,22 @@ module Admin
         "N/A"
       end
     end
+
+    def header_with_add_button(header, button_label, path)
+      capture_haml do
+        haml_tag(:row) do
+          haml_tag(:div, class: 'col-md-10') do
+            haml_tag(:h2, header)
+          end
+          haml_tag(:div, class: 'col-md-2') do
+            haml_tag(:h2) do
+              haml_tag(:a, href: path, class: 'btn btn-primary') do
+                haml_tag(:span, button_label)
+              end
+            end
+          end
+        end
+      end
+    end
   end
 end

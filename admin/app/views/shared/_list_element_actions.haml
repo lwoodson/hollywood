@@ -1,0 +1,10 @@
+- except ||= []
+- unless except.include? :show
+  = link_to path do
+    %span.glyphicon.glyphicon-zoom-in
+- unless except.include? :edit
+  = link_to edit_path do
+    %span.glyphicon.glyphicon-pencil
+- unless except.include? :delete
+  = link_to path, method: :delete do
+    %span.glyphicon.glyphicon-trash

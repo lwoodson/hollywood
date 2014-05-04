@@ -14,10 +14,4 @@
   %div.row
     %div.col-md-12
       = form.text_area :description, rows: 6
-  %div.row
-    %div.col-md-2
-      = link_to "Cancel", movies_path, class: 'btn btn-primary'
-    %div.col-md-8
-      &#160;
-    %div.col-md-2
-      = form.submit class: 'btn btn-primary', style: 'float: right'
+  = render 'shared/form_controls', form: form, cancel_path: movies_path

@@ -1,9 +1,4 @@
-%row
-  %div.col-md-10
-    %h2 Movies
-  %div.col-md-2
-    %h2
-      = link_to('Add Movie', new_movie_path, class: 'btn btn-primary')
+= header_with_add_button("Movies", "Add Movie", new_movie_path)
 
 %table.table.table-striped
   %thead
@@ -27,9 +22,4 @@
       %td
         = formatted movie.premiere
       %td
-        = link_to movie_path(movie) do
-          %span.glyphicon.glyphicon-zoom-in
-        = link_to edit_movie_path(movie) do
-          %span.glyphicon.glyphicon-pencil
-        = link_to movie_path(movie), method: :delete do
-          %span.glyphicon.glyphicon-trash
+        = render 'shared/list_element_actions', path: movie_path(movie), edit_path: edit_movie_path(movie)
