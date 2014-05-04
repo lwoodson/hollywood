@@ -1,0 +1,9 @@
+= bootstrap_form_for(actor) do |form|
+  %div.row
+    %div.col-md-1
+      = form.text_field :id, label: 'ID', disabled: true
+    %div.col-md-5
+      = form.text_field :first_name
+    %div.col-md-6
+      = form.text_field :last_name
+  = render 'shared/form_controls', form: form, cancel_path: actors_path

@@ -7,7 +7,7 @@
       [] Create admin engine w/dummy app and testing support (spec)
          [X] Dashboard showing counts of movies, actors & castings
          [X] CRUD operations for movies
-         [] CRUD operations for actors
+         [X] CRUD operations for actors
          [] CRUD operations for castings
          [X] Mount in web application at /admin
          [] Deploy to digital ocean

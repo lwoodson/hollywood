@@ -1,0 +1,19 @@
+= header_with_add_button("Actors", "Add Actor", new_actor_path)
+
+%table.table.table-striped
+  %thead
+    %tr
+      %td ID
+      %td First Name
+      %td Last Name
+      %td Actions
+  - @actors.each do |actor|
+    %tr
+      %td
+        = actor.id
+      %td
+        = actor.first_name
+      %td
+        = actor.last_name
+      %td
+        = render 'shared/list_element_actions', path: actor_path(actor), edit_path: edit_actor_path(actor), except: [:show]
