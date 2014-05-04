@@ -1,0 +1,35 @@
+%row
+  %div.col-md-10
+    %h2 Movies
+  %div.col-md-2
+    %h2
+      = link_to('Add Movie', new_movie_path, class: 'btn btn-primary')
+
+%table.table.table-striped
+  %thead
+    %tr
+      %td ID
+      %td Title
+      %td Production Start
+      %td Production Finish
+      %td Premier
+      %td Actions
+  - @movies.each do |movie|
+    %tr
+      %td
+        = movie.id
+      %td
+        = link_to(movie.title, movie)
+      %td
+        = formatted movie.production_start
+      %td
+        = formatted movie.production_finish
+      %td
+        = formatted movie.premiere
+      %td
+        = link_to movie_path(movie) do
+          %span.glyphicon.glyphicon-zoom-in
+        = link_to edit_movie_path(movie) do
+          %span.glyphicon.glyphicon-pencil
+        = link_to movie_path(movie), method: :delete do
+          %span.glyphicon.glyphicon-trash

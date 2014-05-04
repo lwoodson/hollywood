@@ -1,0 +1,23 @@
+%h2
+  = @movie.title
+%div.row
+  %div.col-md-12
+    = @movie.description
+%div.spacer-20
+%div.row
+  %div.col-md-4
+    Production started on
+    = formatted @movie.production_start
+  %div.col-md-4
+    Production finished on
+    = formatted @movie.production_finish
+  %div.col-md-4
+    Premiered on
+    = formatted @movie.premiere
+%div.spacer-20
+%div.row
+  %div.col-md-11
+  %div.col-md-1
+    = link_to movies_path do
+      %span.glyphicon.glyphicon-arrow-left
+      Back

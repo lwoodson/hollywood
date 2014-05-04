@@ -48,6 +48,13 @@ div.metric {
   }
 }
 
+div.spacer {
+  height: 1em;
+}
+div.spacer-20 {
+  height: 20px;
+}
+
 @import 'bootstrap';
 
 @import '../tail';

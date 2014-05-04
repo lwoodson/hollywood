@@ -5,10 +5,11 @@
       [X] Create casting model
    [] Create web application - no app directory, just routes
       [] Create admin engine w/dummy app and testing support (spec)
-         [] CRUD operations for movies
+         [X] Dashboard showing counts of movies, actors & castings
+         [X] CRUD operations for movies
          [] CRUD operations for actors
          [] CRUD operations for castings
-         [] Mount in web application at /admin
+         [X] Mount in web application at /admin
          [] Deploy to digital ocean
   [] Create public engine w/dummy app and testing support (spec)
      [] Movie list page

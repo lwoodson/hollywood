@@ -20,6 +20,8 @@ Gem::Specification.new do |s|
   s.add_dependency "haml"
   s.add_dependency "haml-rails"
   s.add_dependency "bootstrap-sass"
+  s.add_dependency "bootstrap-datepicker-rails"
+  s.add_dependency "bootstrap_form"
 
   s.add_development_dependency "pg"
 end

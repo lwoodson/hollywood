@@ -3,6 +3,8 @@ require 'bootstrap-sass'
 # have to explicitly require it here in the engine
 require 'haml'
 require 'haml-rails'
+require 'bootstrap-datepicker-rails'
+require 'bootstrap_form'
 
 module Admin
   class Engine < ::Rails::Engine
