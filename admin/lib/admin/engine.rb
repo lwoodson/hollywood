@@ -5,6 +5,7 @@ require 'haml'
 require 'haml-rails'
 require 'bootstrap-datepicker-rails'
 require 'bootstrap_form'
+require 'virtus'
 
 module Admin
   class Engine < ::Rails::Engine
